@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+        --motors-default-base-color: #f0c540;
+        --motors-default-secondary-color: #344e54;
+        --motors-base-color: #f0c541;
+        --motors-secondary-color: #2c434a;
+        --hma_background_color: hsla(200, 6%, 90%, 0.941);
+        --hma_item_bg_color: #eaedf0;
+        --hma_item_border_color: #d0d4d8;
+        --primary-color: #f0c540;
+        --secondary-color: #2c434a;
+        --light-gray: #f5f5f5;
+        --dark-gray: #333;
+        --border-color: #ddd;
+        --hover-color: #cba941;
+        --footer--:#1a2f35;
+        --textheader-color: #546c71;
+        --footer-bg-color: #2c3e50;
+        --text-color: #ffffff;
+        --secondary-text: #cccccc;
+        --border-color: #445254;
+}
+
+        .registration-page{
+            padding: 2rem 1rem;
+            min-height: 90vh;
+        }
+        .login-form{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+            gap: 40px;
+            max-width: 1200px;
+            padding: 1.5rem;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .login-form1 form{
+            background: var(--footer--);
+            padding: 2rem;
+            line-height: 1.7;
+            height: 380px;
+        }
+        .login-form1 form label{
+            color: #ffffff;
+            font-weight: bold;
+            
+        }
+        .password-div form label{
+            color: #000;
+            font-weight: bold;
+        }
+        .registeration-form1 form{
+            background: var(--motors-default-base-color);
+            padding: 1.5rem;
+            line-height: 1.7;
+            height: 380px;
+        }
+        .login-form1 h1, .registeration-form1 h1 {
+            font-size: 1.8rem;
+            color: var(--motors-secondary-color);
+            margin-bottom: .5rem;
+        }
+        .email-div, .password-div{
+            display: flex;
+            text-align: left;
+            margin: 1rem;
+            flex-direction: column;
+            position: relative;
+        }
+        .email-div i, .password-div i{
+            position: absolute;
+            left: 5px;
+            top: 48px;
+            color: #cccccc;
+        }
+        .registration-email .email-div label, .password-div label{
+            color: var(--motors-default-secondary-color);
+            font-weight: bold;
+
+        }
+        .email-div input, .password-div input
+        .email-div input, .password-div input{
+            width: 100%;
+            padding: 12px 24px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            transition: all 0.3s; 
+        }
+        .email-div input:focus, .password-div input:focus{
+            outline-color: #cba941;
+
+        }
+        .password-reset{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .password-reset p a{
+            text-decoration: none;
+            color: var(--secondary-text);
+        }
+        .login-buttons{
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+            justify-content: space-between;
+        }
+        /* Remember me checkbox styling */
+        .login-buttons div:last-child {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .login-buttons input[type="checkbox"] {
+            width: 12px;
+            height: 12px;
+            accent-color:var(--motors-default-base-color);
+            cursor: pointer;
+        }
+        .login-buttons button {
+            background-color: var(--footer--);
+            color: var(--motors-base-color);
+            border: 2px solid var(--motors-base-color);
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-weight: 600;
+        }
+        .login-buttons button:active {
+            transform: translateY(0);
+        }
+        .login-buttons label{
+            font-size: .9rem;
+            font-weight: l00;
+        }
+        .registeration-form1 .login-button button{
+            width: 30%;
+            padding: .9rem;
+            margin-top: 1.3rem;
+            border: none;
+            background: var(--footer--);
+            color: #fff;
+            font-size: .8rem;
+            font-weight:bold;
+            border-radius: 4px;
+            position: relative;
+            cursor: pointer;
+        }
+        .registeration-form1 .login-button i{
+            position: absolute;
+            color: #fff;
+            top: 16px;
+            left: 110px;
+        }
+        .registeration-form1 .login-button button:hover{
+            background-color: #a79150;
+        }
+
+        
+
+
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div class="firstHeader">
+            <div class="location-details slide-left">
+                <span><i class="fa fa-phone"></i>+256777891441</span>
+                <span><i class="fa fa-map-marker"></i>Arua,WestNile.</span>
+                <span><i class="fa fa-calendar-check-o">MON-SAT 8.00-18.00</i></span>
+            </div>
+            <div class="registration-links slide-right">
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                <div class="register">
+                    <span><button class="pulse"><i class="fa fa-user"></i>LOGIN</button></span>
+                    <span><button class="pulse">REGISTER</button></span>
+                </div>
+            </div>
+        </div>
+        <div class="secondHeader">
+            <div class="logo fade-in">
+                <a href="index.html"><img src="new-vechicles/logo.png" alt="logo"></a>
+            </div>
+        
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        
+            <nav class="navigation fade-in">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="desktop-view-social-media-links" style="display: none;">
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                <div class="register">
+                    <span><button><i class="fa fa-user"></i><a href="registration.html">LOGIN</a></button></span>
+                    <span><button>REGISTER</button></span>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <a href="index.html"><img src="new-vechicles/logo.png" alt="logo"></a>
+                </div>
+                <div class="mobile-menu-close" id="mobileMenuClose">&times;</div>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+            <div class="mobile-social-links">
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+            </div>
+            <div class="mobile-register">
+                <button><i class="fa fa-user"></i><a href="registration.html">LOGIN</a></button>
+                <button><a href="registration.html">REGISTER</a></button>
+            </div>
+        </div>
+
+    </header>
+    <section class="registration-page">
+        <div class="login-form">
+            <div class="login-form1">
+                <h1>LOGIN</h1>
+                <form  method="POST">
+                    
+                    <div class="email-div">
+                        
+                        <label for="login">LOGIN</label> <i class="fas fa-user"></i><input type="email" name="email" id="email" placeholder="Username or email address*" required>
+                    </div>
+                    <div class="password-div">
+                        
+                        <div class="password-reset"><label for="password">PASSWORD</label><p><a href="">Lost your password?</a></p></div>
+                        <i class="fas fa-lock"></i><input type="password" name="password" id="password" placeholder="Password*" required>
+                        
+                        <div class="login-buttons">
+                            <div><button type="submit">Login</button></div>
+                            <div><input type="checkbox" ><label for="">Remember me</label></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="registeration-form1">
+                <H1>REGISTER</H1>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div class="registration-email">
+                        <div class="email-div">
+                            <input type="hidden" name="access_key" value="2a740247-ea5b-4d45-8b79-c73eec06d466">
+                            <label for="email">EMAIL</label><i class="fas fa-envelope"></i><input type="email" placeholder="Email address*" required>
+                        </div>
+                    </div>
+                    <div class="password-div">
+                        <input type="hidden" name="access_key" value="2a740247-ea5b-4d45-8b79-c73eec06d466">
+                        <label for="password">PASSWORD</label>
+                        <i class="fas fa-lock"></i><input type="password" name="password" id="password" placeholder="Password*" required>
+                        <div class="login-button">
+                            <button type="submit">REGISTER<i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="fade-in">
+        <div class="foot-container">
+            <div class="footer-column slide-left">
+                <div class="column-title"><span>ABOUT</span> CAR RENTAL</div>
+                <div class="info-text">
+                    Motors Automotive we repair domestic and foreign cars. We service the Los Angeles Metro Area for
+                    all Automotive
+                    Service & Repair.
+                </div>
+            </div>
+            <div class="footer-column slide-up">
+                <div class="column-title">CONTACT INFO</div>
+                <div class="info-text">
+                    Car Rental Office: <span>(+256) 777-891441</span><br>
+                    Vehicle Repair service: <span>(+256) 74555891</span><br>
+                    Email: <span>info@motorsrental.com</span>
+                </div>
+            </div>
+            <div class="footer-column slide-up">
+                <div class="column-title">SERVICES HOURS</div>
+                <div class="info-text">
+                    Monday - Friday: <span>09:00AM - 09:00PM</span><br>
+                    Saturday: <span>09:00AM - 07:00PM</span><br>
+                    Sunday: <span>Closed</span>
+                </div>
+            </div>
+            <div class="footer-column slide-right">
+                <div class="column-title">SOCIAL NETWORK</div>
+                <div class="social-subtext">
+                    <a href="https://example.com" target="_blank" class="icon-link">
+                        <i class="fab fa-facebook"></i> </a>
+                    <a href="https://example.com" target="_blank" class="icon-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://example.com" target="_blank" class="icon-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://example.com" target="_blank" class="icon-link">
+                        <i class="fab fa-google-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copy fade-in">
+            <p>Copyright &copy; 2025 <span>Motors</span> Rental. All rights reserved.Powered by <a
+                    href="https://example.com" target="_blank">joh</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
