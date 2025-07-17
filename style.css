@@ -395,11 +395,10 @@ nav ul li a:hover{
 /* Strict 3x2 Grid Layout */
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
     max-width: 1500px;
-    margin: 0 auto;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .category-container {
@@ -410,6 +409,7 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     height: 420px;
+    width: 100%;
 }
 .category-container:hover {
 background-color: var(--primary-color);
