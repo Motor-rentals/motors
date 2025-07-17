@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="terms.css">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header>
+        <div class="firstHeader">
+            <div class="location-details slide-left">
+                <span><i class="fa fa-phone"></i>+256777891441</span>
+                <span><i class="fa fa-map-marker"></i>Arua,WestNile.</span>
+                <span><i class="fa fa-calendar-check-o"></i>MON-SAT 8.00-18.00</span>
+            </div>
+            <div class="registration-links slide-right">
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                <div class="register">
+                    <span><button class="pulse"><i class="fa fa-user"></i><a href="registration.html">LOGIN</a></button></span>
+                    <span><button class="pulse"><a href="registration.html">REGISTER</a></button></span>
+                </div>
+            </div>
+        </div>
+        <div class="secondHeader">
+            <div class="logo fade-in">
+                <a href="index.html"><img src="logo.png" alt="logo"></a>
+            </div>
+        
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+        
+            <nav class="navigation fade-in">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="desktop-view-social-media-links" style="display: none;">
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                <div class="register">
+                    <span><button><i class="fa fa-user"></i><a href="registration.html">LOGIN</a></button></span>
+                    <span><button>REGISTER</button></span>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    </header>
+    <main>
+        <div class="hero-section">
+            <div class="image1 fade-in">
+                <img src="home-page-car.png" alt="IMAGE">
+            </div>
+            <div class="reservation-form slide-up">
+                <form action="" method="post" id="reservation-form">
+                    <h1 class="typing">PICK UP</h1>
+                    <div class="form-group">
+                        <label for="office">
+                            <select name="date" id="date" size="1">
+                                <option value="Choose Office">Choose Office</option>
+                                <option value="Choose Office">office 1</option>
+                                <option value="Choose Office">office 2</option>
+                                <option value="Choose Office">office 3</option>
+                                <option value="Choose Office">office 4</option>
+                            </select>
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <p class="checkbox-container">
+                            <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox">Return to the
+                                same location.</label>
+                        </p>
+                        <input type="datetime-local" name="date" id="date" placeholder="Pick Up Date">
+                    </div>
+                    <div class="form-group">
+                        <Label>RETURN</Label>
+                        <input type="datetime-local" name="date" id="date" placeholder="Return Date">
+                    </div>
+                    <div class="form-group">
+                        <button id="search-vechile-buuton" onclick="searchVehicle()" class="bounce">Find Vehicle <i
+                                class="fa fa-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Floating Menu -->
+        <div class="floating-menu" id="floatingMenu">
+            <div class="menu-items">
+                <a href="https://motors.stylemixthemes.com/rent-a-car/" class="menu-item" data-title="DEMOS"><i
+                        class="fas fa-home"></i></a>
+                <a href="https://themeforest.net/item/motors-automotive-cars-vehicle-boat-dealership-classifieds-wordpress-theme/13987211?ref=StylemixThemes&license=regular&open_purchase_for_item_id=13987211&purchasable=source&irgwc=1&clickid=Stb3cl1RJxycRNn04yTbY0EqUksXQlQhv1EySY0&iradid=475676&irpid=1240813&iradtype=BANNER&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1240813&utm_medium=affiliate&utm_source=impact_radius&clickthrough_id=1436123026&redirect_back=true"
+                    class="menu-item" data-title="BUY $10"><i class="fas fa-cog"></i></a>
+                <a href="https://docs.stylemixthemes.com/motors-theme-documentation/" class="menu-item"
+                    data-title="Documentation"><i class="fas fa-envelope"></i></a>
+                <a href="https://motors.stylemixthemes.com/rent-a-car/" class="menu-item"
+                    data-title="Click to show mobile version"><i class="fas fa-info-circle"></i></a>
+                <a href="https://motors.stylemixthemes.com/app/" class="menu-item" data-title="Motor Apps"><i
+                        class="fa fa-tablet" aria-hidden="true"></i></a>
+            </div>
+            <div class="menu-button" id="menuButton">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    
+        <section class="homepage-section2">
+            <h2 class="section-title fade-in">WHY CHOOSE US</h2>
+            <div class="homepage-section2-grid">
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Outstanding Services</h3>
+                        <p>We offer a wide range of high-quality vehicles to suit your needs.</p>
+                    </div>
+                </div>
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Name for quality vehicles</h3>
+                        <p>We ensure that all our vehicles are well-maintained and reliable.</p>
+                    </div>
+                </div>
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>GPS on every vehicle</h3>
+                        <p>All our vehicles are equipped with GPS for your safety and convenience.</p>
+                    </div>
+                </div>
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-baby-carriage"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Baby Chairs/Booster Chairs</h3>
+                        <p>We provide baby chairs and booster seats for the safety of your little ones.</p>
+                    </div>
+                </div>
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>ATM/MT Transactions</h3>
+                        <p>We accept various payment methods for your convenience.</p>
+                    </div>
+                </div>
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>24 Hours Support</h3>
+                        <p>Our customer support team is available 24/7 to assist you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- VEHICLE CATEGORY SECTION -->
+        <section class="vehicle-category">
+            <h1 class="fade-in">VEHICLE CATEGORIES</h1>
+            <h2 class="typing">Choose from our premium selection</h2>
+    
+            <div class="category-grid">
+                <!-- Vehicle 1 -->
+                <div class="category-container slide-left">
+                    <div class="category-info">
+                        <h3>Economy</h3>
+                        <p>Mini Cooper 3 or similar</p>
+                        <div class="category-details">
+                            <span><i class="fas fa-users"></i> 4 seats</span>
+                            <span><i class="fas fa-car"></i> 2 doors</span>
+                            <span><i class="fas fa-snowflake"></i> A/C</span>
+                        </div>
+                        <a href="reservation.html" class="price-btn pulse">FROM $100<sub>/DAY</sub></a>
+                    </div>
+                    <div class="category-image">
+                        <img src="cars001.png" alt="Mini Cooper">
+                    </div>
+                </div>
+    
+                <!-- Vehicle 2 -->
+                <div class="category-container slide-up">
+                    <div class="category-info">
+                        <h3>Compact</h3>
+                        <p>Honda Civic or similar</p>
+                        <div class="category-details">
+                            <span><i class="fas fa-users"></i> 5 seats</span>
+                            <span><i class="fas fa-car"></i> 4 doors</span>
+                            <span><i class="fas fa-snowflake"></i> A/C</span>
+                        </div>
+                        <a href="reservation.html" class="price-btn pulse">FROM $120<sub>/DAY</sub></a>
+                    </div>
+                    <div class="category-image">
+                        <img src="cars002.png" alt="Compact Car">
+                    </div>
+                </div>
+    
+                <!-- Vehicle 3 -->
+                <div class="category-container slide-up">
+                    <div class="category-info">
+                        <h3>Midsize</h3>
+                        <p>Toyota Camry or similar</p>
+                        <div class="category-details">
+                            <span><i class="fas fa-users"></i> 5 seats</span>
+                            <span><i class="fas fa-car"></i> 4 doors</span>
+                            <span><i class="fas fa-snowflake"></i> A/C</span>
+                        </div>
+                        <a href="reservation.html" class="price-btn pulse">FROM $150<sub>/DAY</sub></a>
+                    </div>
+                    <div class="category-image">
+                        <img src="cars003.png" alt="Midsize Sedan">
+                    </div>
+                </div>
+    
+                <!-- Vehicle 4 -->
+                <div class="category-container slide-right">
+                    <div class="category-info">
+                        <h3>SUV</h3>
+                        <p>Ford Explorer or similar</p>
+                        <div class="category-details">
+                            <span><i class="fas fa-users"></i> 7 seats</span>
+                            <span><i class="fas fa-car"></i> 5 doors</span>
+                            <span><i class="fas fa-snowflake"></i> A/C</span>
+                        </div>
+                        <a href="reservation.html" class="price-btn pulse">FROM $180<sub>/DAY</sub></a>
+                    </div>
+                    <div class="category-image">
+                        <img src="cars004.png" alt="SUV">
+                    </div>
+                </div>
+    
+                <!-- Vehicle 5 -->
+                <div class="category-container slide-left">
+                    <div class="category-info">
+                        <h3>Luxury</h3>
+                        <p>BMW 5 Series or similar</p>
+                        <div class="category-details">
+                            <span><i class="fas fa-users"></i> 5 seats</span>
+                            <span><i class="fas fa-car"></i> 4 doors</span>
+                            <span><i class="fas fa-snowflake"></i> A/C</span>
+                        </div>
+                        <a href="reservation.html" class="price-btn pulse">FROM $250<sub>/DAY</sub></a>
+                    </div>
+                    <div class="category-image">
+                        <img src="cars005.png" alt="Luxury Car">
+                    </div>
+                </div>
+    
+                <!-- Vehicle 6 -->
+                <div class="category-container slide-up">
+                    <div class="category-info">
+                        <h3>Convertible</h3>
+                        <p>Mustang Convertible or similar</p>
+                        <div class="category-details">
+                            <span><i class="fas fa-users"></i> 4 seats</span>
+                            <span><i class="fas fa-car"></i> 2 doors</span>
+                            <span><i class="fas fa-snowflake"></i> A/C</span>
+                        </div>
+                        <a href="reservation.html" class="price-btn pulse">FROM $220<sub>/DAY</sub></a>
+                    </div>
+                    <div class="category-image">
+                        <img src="cars006.png" alt="Convertible">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- HTML Structure for testimonials -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="fade-in">What Our Clients Say</h2>
+                <p class="subtitle typing">Hear from companies that trust Avechile for their hiring needs</p>
+    
+                <div class="testimonials-slider">
+                    <button class="slider-arrow prev-arrow bounce" aria-label="Previous testimonials">&#10094;</button>
+    
+                    <div class="testimonials-track">
+                        <!-- Testimonial cards will be inserted here by JavaScript -->
+                    </div>
+    
+                    <button class="slider-arrow next-arrow bounce" aria-label="Next testimonials">&#10095;</button>
+                </div>
+    
+                <div class="slider-dots">
+                    <!-- Dots will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    
+        <section class="what-you-know-about-us">
+            <div class="part-1">
+                <div class="left-side slide-left">
+                    <h1 class="typing">What Do You Know About us</h1>
+                    <p>At Avechile, we're redefining talent acquisition through precision matching and innovative
+                        recruitment solutions. With
+                        over a decade of industry experience, we've mastered the art of connecting exceptional
+                        professionals with
+                        forward-thinking companies. Our unique approach combines cutting-edge technology with human
+                        expertise to deliver hiring
+                        results that drive business growth.</p>
+                    <button class="pulse"> <a href="about.html">OUR COMPANY</a></button>
+                </div>
+                <div class="right-side slide-right">
+                    <img src="image.png">
+                </div>
+            </div>
+            <div class="part-2 fade-in">
+                <div class="about-paragrah">
+                    <p class="typing">HAVE A QUESTIONS? FEEL FREE TO ASK...</p>
+                </div>
+                <div class="aboutpa">
+                    <div><i class="fa fa-phone" aria-hidden="true" id="icon"> +256 777891441</i></div>
+                    <div><button class="bounce"><i class="fa fa-envelope" aria-hidden="true"></i><a
+                                href="sms:+256777891441">FEEDBACK</a></button></div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="map-container fade-in">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23696.579635977654!2d30.903634723049493!3d3.0506800770673137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176e62919f9088b1%3A0x3ff45a85d8009521!2sArua%20Airport!5e1!3m2!1sen!2sug!4v1751880718083!5m2!1sen!2sug"
+                width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+    
+        <footer class="fade-in">
+            <div class="foot-container">
+                <div class="footer-column slide-left">
+                    <div class="column-title"><span>ABOUT</span> CAR RENTAL</div>
+                    <div class="info-text">
+                        Motors Automotive we repair domestic and foreign cars. We service the Los Angeles Metro Area for
+                        all Automotive
+                        Service & Repair.
+                    </div>
+                </div>
+                <div class="footer-column slide-up">
+                    <div class="column-title">CONTACT INFO</div>
+                    <div class="info-text">
+                        Car Rental Office: <span>(+256) 777-891441</span><br>
+                        Vehicle Repair service: <span>(+256) 74555891</span><br>
+                        Email: <span>info@motorsrental.com</span>
+                    </div>
+                </div>
+                <div class="footer-column slide-up">
+                    <div class="column-title">SERVICES HOURS</div>
+                    <div class="info-text">
+                        Monday - Friday: <span>09:00AM - 09:00PM</span><br>
+                        Saturday: <span>09:00AM - 07:00PM</span><br>
+                        Sunday: <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-column slide-right">
+                    <div class="column-title">SOCIAL NETWORK</div>
+                    <div class="social-subtext">
+                        <a href="https://example.com" target="_blank" class="icon-link">
+                            <i class="fab fa-facebook"></i> </a>
+                        <a href="https://example.com" target="_blank" class="icon-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://example.com" target="_blank" class="icon-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://example.com" target="_blank" class="icon-link">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy fade-in">
+                <p>Copyright &copy; 2025 <span>Motors</span> Rental. All rights reserved.Powered by <a
+                        href="https://example.com" target="_blank">joh</a></p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
